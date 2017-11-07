@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="projects.android.my.threads.MainActivity">
+
+
+    <Button
+        android:onClick="downloadImage"
+        android:id="@+id/loadImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="125dp"
+        android:text="Load Data"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/content" />
+
+
+    <TextView
+        android:id="@+id/txtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="98dp"
+        android:text="File Data"
+        android:layout_above="@+id/loadImage"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/loadImage"
+        android:layout_toEndOf="@+id/txtView"
+        android:onClick="DeleteFile"
+        android:text="Delete" />
+</RelativeLayout>
